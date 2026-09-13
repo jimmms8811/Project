@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+body {
+  min-height: 100vh;
+  color: #111827;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(255, 255, 255, 0.5), transparent),
+    radial-gradient(1000px 500px at 90% 10%, rgba(209, 213, 219, 0.8), transparent),
+    radial-gradient(900px 600px at 50% 110%, rgba(107, 114, 128, 0.45), transparent),
+    linear-gradient(160deg, #e5e7eb 0%, #9ca3af 55%, #6b7280 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 32px rgba(17, 24, 39, 0.15);
+  color: #111827;
+}
+
+.glass-strong {
+  background: #ffffff;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 12px 40px rgba(17, 24, 39, 0.22);
+  color: #111827;
+}
+
+.glass-input {
+  background: #ffffff;
+  border: 1px solid rgba(17, 24, 39, 0.18);
+  color: #111827;
+}
+.glass-input::placeholder {
+  color: #6b7280;
+}
+.glass-input:focus {
+  outline: none;
+  border-color: rgba(2, 132, 199, 0.7);
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(17, 24, 39, 0.25);
+  border-radius: 8px;
+}
+
+/* ---------- Dark theme ---------- */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  color: #e2e8f0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(56, 189, 248, 0.18), transparent),
+    radial-gradient(1000px 500px at 90% 10%, rgba(168, 85, 247, 0.18), transparent),
+    radial-gradient(900px 600px at 50% 110%, rgba(34, 197, 94, 0.12), transparent),
+    linear-gradient(160deg, #0b1220 0%, #111c33 50%, #0b1220 100%);
+}
+
+.dark .glass {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  color: #e2e8f0;
+}
+
+.dark .glass-strong {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  color: #e2e8f0;
+}
+
+.dark .glass-input {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f1f5f9;
+}
+.dark .glass-input::placeholder {
+  color: rgba(226, 232, 240, 0.5);
+}
+.dark .glass-input:focus {
+  border-color: rgba(56, 189, 248, 0.7);
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Light-theme slate utilities remapped for dark */
+.dark .text-slate-900 { color: #f1f5f9; }
+.dark .text-slate-800 { color: #e2e8f0; }
+.dark .text-slate-700 { color: #cbd5e1; }
+.dark .text-slate-600 { color: #cbd5e1; }
+.dark .text-slate-500 { color: #94a3b8; }
+.dark .text-sky-700 { color: #7dd3fc; }
+.dark .text-sky-800 { color: #7dd3fc; }
+.dark .text-emerald-800 { color: #6ee7b7; }
+.dark .text-amber-800 { color: #fcd34d; }
+.dark .text-rose-700 { color: #fda4af; }
+.dark .text-rose-800 { color: #fda4af; }
+
+.dark .bg-slate-900\/5 { background-color: rgba(255, 255, 255, 0.08); }
+.dark .bg-slate-900\/10 { background-color: rgba(255, 255, 255, 0.14); }
+.dark .hover\:bg-slate-900\/5:hover { background-color: rgba(255, 255, 255, 0.12); }
+.dark .hover\:bg-slate-900\/10:hover { background-color: rgba(255, 255, 255, 0.18); }
+.dark .border-slate-900\/10 { border-color: rgba(255, 255, 255, 0.12); }
+.dark .border-slate-900\/15 { border-color: rgba(255, 255, 255, 0.18); }
+.dark tbody tr:hover { background: rgba(255, 255, 255, 0.06); }
+
+/* Smooth hover animations */
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > * {
+  animation: fade-slide-in 0.35s ease both;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+tbody tr:hover {
+  background: rgba(17, 24, 39, 0.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > *,
+  tbody tr {
+    animation: none;
+    transition: none;
+  }
+}

@@ -1,0 +1,8 @@
+[
+  { "id": "in1", "type": "inbound", "ref": "IN-9001", "supplier": "PackWell", "status": "pending", "items": 120, "eta": "2026-09-11" },
+  { "id": "in2", "type": "inbound", "ref": "IN-9002", "supplier": "Steelindo", "status": "receiving", "items": 500, "eta": "2026-09-10" },
+  { "id": "in3", "type": "inbound", "ref": "IN-9003", "supplier": "SafePro", "status": "completed", "items": 200, "eta": "2026-09-08" },
+  { "id": "out1", "type": "outbound", "ref": "OUT-7001", "supplier": "Jakarta Store", "status": "pending", "items": 85, "eta": "2026-09-10" },
+  { "id": "out2", "type": "outbound", "ref": "OUT-7002", "supplier": "Bandung DC", "status": "picking", "items": 240, "eta": "2026-09-11" },
+  { "id": "out3", "type": "outbound", "ref": "OUT-7003", "supplier": "Surabaya Store", "status": "completed", "items": 150, "eta": "2026-09-09" }
+]

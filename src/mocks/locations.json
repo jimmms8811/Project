@@ -1,0 +1,7 @@
+[
+  { "id": "l1", "code": "A-01-01", "zone": "A - Hardware", "capacity": 500 },
+  { "id": "l2", "code": "B-02-03", "zone": "B - Packaging", "capacity": 800 },
+  { "id": "l3", "code": "C-01-02", "zone": "C - Safety", "capacity": 300 },
+  { "id": "l4", "code": "D-01-01", "zone": "D - Equipment", "capacity": 100 },
+  { "id": "l5", "code": "D-02-01", "zone": "D - Maintenance", "capacity": 200 }
+]

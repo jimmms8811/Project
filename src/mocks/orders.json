@@ -1,0 +1,50 @@
+[
+  {
+    "id": "o1",
+    "ref": "SO-5001",
+    "customer": "Jakarta Store",
+    "status": "picking",
+    "lines": 4,
+    "total": 5128000.0
+  },
+  {
+    "id": "o2",
+    "ref": "SO-5002",
+    "customer": "Bandung DC",
+    "status": "packing",
+    "lines": 6,
+    "total": 14240000.0
+  },
+  {
+    "id": "o3",
+    "ref": "SO-5003",
+    "customer": "Surabaya Store",
+    "status": "shipped",
+    "lines": 3,
+    "total": 6572000.0
+  },
+  {
+    "id": "o4",
+    "ref": "SO-5004",
+    "customer": "Medan Outlet",
+    "status": "pending",
+    "lines": 2,
+    "total": 2400000.0
+  },
+  {
+    "id": "o5",
+    "ref": "SO-5005",
+    "customer": "Semarang Hub",
+    "status": "picking",
+    "lines": 5,
+    "total": 10243000.0
+  },
+  {
+    "id": "o6",
+    "ref": "SO-5006",
+    "customer": "Denpasar Shop",
+    "status": "shipped",
+    "lines": 7,
+    "total": 17920000.0
+  }
+]

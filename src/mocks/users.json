@@ -1,0 +1,5 @@
+[
+  { "id": "u1", "name": "Aisha Admin", "username": "admin", "password": "password", "role": "admin" },
+  { "id": "u2", "name": "Maya Manager", "username": "manager", "password": "password", "role": "manager" },
+  { "id": "u3", "name": "Samsul Supervisor", "username": "supervisor", "password": "password", "role": "spv" }
+]

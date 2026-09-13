@@ -1,0 +1,6 @@
+[
+  { "id": "s1", "name": "Steelindo", "contact": "Budi", "leadTime": "3 days" },
+  { "id": "s2", "name": "PackWell", "contact": "Sari", "leadTime": "2 days" },
+  { "id": "s3", "name": "SafePro", "contact": "Agus", "leadTime": "4 days" },
+  { "id": "s4", "name": "HeavyParts Co", "contact": "Rina", "leadTime": "7 days" }
+]
